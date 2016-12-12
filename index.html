@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='utf-8'>
+    <title>Calendar</title>
+	<link rel="stylesheet" href="calendar.css">
+	<link rel="stylesheet" href="calendar_event.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div class="calendar-wrap">
+	<div class="calendar" id="calendar">
+		<div class="header">
+			<div class="header-title">
+				<div class="header-title-date" id="header-title-date">MM YYYY</div>
+			</div>
+			<button class="prev" id="prev_month_btn"></button>
+			<button class="next" id="next_month_btn"></button>
+		</div>
+		<div class="day-title-wrap">
+			<div>SUN</div>
+			<div>MON</div>
+			<div>TUE</div>
+			<div>WED</div>
+			<div>THU</div>
+			<div>FRI</div>
+			<div>SAT</div>
+		</div>
+		<div class="day-wrap" id="day-wrap"></div>
+	</div>
+	<div class="event-options">
+
+	</div>
+</div>
+
+<!-- For user to log in-->
+<div class="Login" id="Login">
+		<label for="username">Username</label>
+		<input type="text" name="username" id="username"/> <br>
+		<label for="password">Password</label>
+		<input type="password" name="password" id="password"/> <br>
+		<button id="login_btn">Log In</button> <br> <br>
+    <button id="register_btn">Register</button> <br>
+
+<div id="test"></div>
+</div>
+<!--<script type="text/javascript" src="Login.js"></script>-->
+<!-- After user is logged in, username and logout button is shown-->
+<div class="AfterLogIn">
+  <p id="ShowUser"> <br></p>
+  <button id="logout_btn" hidden="hidden">Log Out</button> <br>
+</div>
+<script type="text/javascript" src="Logout.js"></script>>
+
+<div class="Category" id="Category" hidden="hidden">
+  <label id="CategoryOfEvents">Category of Events</label> <br>
+  <input type="radio" name="select" id="Study" value="Study"> Study <br>
+  <input type="radio" name="select" id="Friends" value="Friends"> Friends <br>
+  <input type="radio" name="select" id="Family" value="Family"> Family <br>
+  <input type="radio" name="select" id="Fun" value="Fun"> Fun <br>
+  <input type="radio" name="select" id="Other" value="Other"> Other <br>
+  <button id="disable">Disable Category</button> <br>
+</div>
+
+<!-- div class="AddEvent" id="AddEvent" hidden="hidden"-->
+<div class="AddEvent" id="AddEvent" hidden="hidden">
+  <button id="enable" hidden="hidden">Enable Category</button> <br>
+  <label>Event title:</label>
+  <input type="text" name="title" id="input-title"/> <br>
+  <label>Year</label>
+  <input type="number" name="year" id="input-year"/> <br>
+  <label>Month</label>
+  <input type="number" name="month" id="input-month" min="1" max="12"/> <br>
+  <label>Date</label>
+  <input type="number" name="date" id="input-date" min="1" max="31"/> <br>
+  <label>Hour</label>
+  <input type="number" name="hour" id="input-hour" min="0" max="24"/> <br>
+  <label>Minute</label>
+  <input type="number" name="minute" id="input-minute" min="0" max="59"/> <br>
+  <button id="edit_event_btn">Add/Edit Event </button>
+  <button id="delete_event_btn">Delete Event </button>
+  <button id="reset_event_btn">Reset </button><br>
+</div>
+
+<input type="hidden" name="token" id="token">
+<!--<script type="text/javascript" src="AddEvent.js"></script>-->
+<script type="text/javascript" src="calendar_helper.js"></script>
+<script type="text/javascript" src="calendar.js"></script>
+<script type="text/javascript" src="calendar_event.js"></script>
+<script type="text/javascript" src="Category.js"></script>
+
+
+
+</body>
+</html>
