@@ -1,6 +1,5 @@
 # CSE330-Calendar
 * A web calendar that allows users to add and remove events dynamically.
-* Link: http://ec2-52-42-163-245.us-west-2.compute.amazonaws.com/~XieXY/Module5/index.html  
 
 ### How to use the website? ###
 
